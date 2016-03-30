@@ -1,0 +1,36 @@
+New log file opened at Wed Mar 30 20:45:06 CEST 2016 by 10788@MacBook-PC
+Taking next connection to: 4925
+New client attempting to connect on port: 4926-4925
+  Address = /192.168.1.114:4925
+This client on port 4926 has uuid 563b47e3-658d-4f6e-84a2-bb32355b4114 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-563b47e3-658d-4f6e-84a2-bb32355b4114
+Taking next connection to: 4925
+New client attempting to connect on port: 4927-4925
+  Address = /192.168.1.114:4925
+Handshake exception on socket: 4927
+sbt.impl.ipc.HandshakeException: Unable to perform handshake
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:46)
+	at sbt.impl.ipc.MultiClientServer.<init>(IPC.scala:150)
+	at sbt.server.SbtServerSocketHandler$$anon$1.run(SbtServerSocketHandler.scala:43)
+Caused by: java.net.SocketException: Software caused connection abort: recv failed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:150)
+	at java.net.SocketInputStream.read(SocketInputStream.java:121)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:246)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:265)
+	at java.io.DataInputStream.readInt(DataInputStream.java:387)
+	at sbt.impl.ipc.Peer.receive(IPC.scala:95)
+	at sbt.impl.ipc.Peer.handshake(IPC.scala:49)
+	... 2 more
+Taking next connection to: 4925
+New client attempting to connect on port: 4928-4925
+  Address = /192.168.1.114:4925
+This client on port 4928 has uuid ca9231a1-6ef0-44e2-a83f-05085fbb98a2 configName activator humanReadableName Activator protocolVersion 3 featureTags Vector()
+Connected Clients: activator-563b47e3-658d-4f6e-84a2-bb32355b4114, activator-ca9231a1-6ef0-44e2-a83f-05085fbb98a2
+Taking next connection to: 4925
+Checking to see if clients are empty...
+No non-daemon clients connected after 3 min. Shutting down.
+Server socket thread exiting.
+0 clients open, will close them...
+All client sockets have been closed.
+Closing the 10788@MacBook-PC logs at Wed Mar 30 20:48:07 CEST 2016, goodbye.
