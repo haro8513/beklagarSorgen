@@ -9,12 +9,11 @@
  * argument is a `String` with the title of the page, the second
  * argument is an `Html` object containing the body of the page.
  *@
-@main("Hello Liza") {
+@main("Hej jag är fliken") {
 
-    @*
-     * Get an `Html` object by calling the built-in Play welcome
-     * template and passing a `String` message.
-     *@
-   @message
-
+   <form action="@routes.PersonController.addPerson()" method="post">
+   <input type ="text" name="name"/>
+   <button>Add Person</button>
+   
+   </form>
 }
