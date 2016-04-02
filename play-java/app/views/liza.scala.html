@@ -10,13 +10,12 @@
  * argument is an `Html` object containing the body of the page.
  *@
 @main(message) {
+
+	<img src="@routes.Assets.versioned("images/liza.jpg")" alt="Liza" style="width:480px;height:640px;">
+	<br>
 	
-	<form action="@routes.PersonController.addPerson()" method="post"> 
-   <input type ="text" name="name"/>
-   <button>Add Person</button>
+	<form action="@routes.HomeController.wakeLiza()" method="get"> 
+	<button>Väck Liza</button>
+	</form>
 
-	<script type='text/javascript' src="@routes.Assets.versioned("js/index.js")"></script>
-
-	<ul id="persons"></ul>
-  </form>
 }

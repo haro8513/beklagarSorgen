@@ -15,8 +15,6 @@ import play.data.FormFactory;
 import static play.libs.Json.toJson;
 
 public class PersonController extends Controller {
-	
-
 	private FormFactory formFactory;
 	
 	@Inject
@@ -30,8 +28,6 @@ public class PersonController extends Controller {
 		Form<Person> personForm = formFactory.form(Person.class);
 		Person person = personForm.bindFromRequest().get();
 		person.save();
-
-		Logger.info("Hej");
 		return redirect(routes.HomeController.index());
 	}
 	

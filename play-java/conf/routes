@@ -9,5 +9,9 @@ POST	/person						controllers.PersonController.addPerson()
 
 GET 	/persons					controllers.PersonController.getPersons()
 
+GET     /liza                       controllers.HomeController.liza()
+
+GET     /wakeLiza                   controllers.HomeController.wakeLiza()
+
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
