@@ -2,6 +2,8 @@ resolvers += Resolver.url("heroku-sbt-plugin-releases",
 url("http://dl.bintray.com/heroku/sbtplugins/"))(
 Resolver.ivyStylePatterns)
 
+resolvers += Resolver.url("Typesafe Ivy releases", url("https://repo.typesafe.com/typesafe/ivy-releases"))(Resolver.ivyStylePatterns)
+
 // The Play plugin
 addSbtPlugin("com.typesafe.play" % "sbt-plugin" % "2.5.1")
 
