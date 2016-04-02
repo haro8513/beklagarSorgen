@@ -16,3 +16,5 @@ libraryDependencies ++= Seq(
 fork in run := true
 
 herokuAppName in Compile := "glacial-depths-14841"
+
+resolvers += Resolver.url("Typesafe Ivy releases", url("https://repo.typesafe.com/typesafe/ivy-releases"))(Resolver.ivyStylePatterns)
