@@ -14,3 +14,5 @@ libraryDependencies ++= Seq(
 
 
 fork in run := true
+
+herokuAppName in Compile := "glacial-depths-14841"

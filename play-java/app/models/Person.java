@@ -10,7 +10,6 @@ public class Person extends Model  {
 	
 	@Id
 	public Long id;
-	
 	public String name;
 
 }
