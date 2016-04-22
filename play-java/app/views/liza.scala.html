@@ -13,9 +13,5 @@
 
 	<img src="@routes.Assets.versioned("images/liza.jpg")" alt="Liza" style="width:480px;height:640px;">
 	<br>
-	
-	<form action="@routes.HomeController.wakeLiza()" method="get"> 
-	<button>Väck Liza</button>
-	</form>
-
+	<a href="@routes.HomeController.wakeLiza()" data-role="button">Väck Liza</a>
 }
