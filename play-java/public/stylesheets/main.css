@@ -1,3 +1,15 @@
 body{
 	background-color: lightblue;
+	margin-left: 10px;
+}
+
+h1{
+	text-decoration: overline;
+	color: red;
+}
+
+/* Borde detta ligga i en separat css-fil då det endast berör något som finns på en av viewerna?*/
+
+#persons {
+    list-style-type: square;
 }
